@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.1">
     <Name>SystemMonitoring</Name>
-    <Version>6.1.0</Version>
+    <Version>6.1.1</Version>
+    <ChangeLog Version="6.1.1" Date="2021-09-14 13:41:09 +0200">Ported to 6.1</ChangeLog>
     <Framework>6.1.x</Framework>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
@@ -11,35 +12,35 @@
     <Description Lang="es">Interfaz de correo básico para sistema de monitorización. También proporciona una integración más profunda de Nagios e Icinga2 (reconocer el bloqueo y script de control).</Description>
     <Description Lang="hu">Alapszintű levelezési felület a rendszerfigyelő alkalmazáscsomagokhoz. Mélyebb integrációt biztosít a Nagios és Icinga2 programokhoz (nyugtázás zároláskor és ellenőrző parancsfájl).</Description>
     <Filelist>
-        <File Permission="660" Location="doc/en/SystemMonitoring.xml" />
-        <File Permission="660" Location="Kernel/Config/Files/XML/SystemMonitoring.xml" />
-        <File Permission="660" Location="Kernel/Config/NagiosCheck.pm.example" />
-        <File Permission="660" Location="Kernel/Language/bg_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/de_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/es_MX_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/es_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/hu_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/it_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/ja_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/pl_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/pt_BR_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/ru_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/sk_SK_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/sr_Cyrl_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/sr_Latn_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/Language/zh_CN_SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/System/Console/Command/Maint/SystemMonitoring/NagiosCheck.pm" />
-        <File Permission="660" Location="Kernel/System/Console/Command/Maint/SystemMonitoring/NagiosCheckTicketCount.pm" />
-        <File Permission="660" Location="Kernel/System/PostMaster/Filter/SystemMonitoring.pm" />
-        <File Permission="660" Location="Kernel/System/Ticket/Event/NagiosAcknowledge.pm" />
-        <File Permission="660" Location="Kernel/System/Ticket/Event/Icinga2Acknowledge.pm" />
-        <File Permission="660" Location="scripts/test/Console/Command/Maint/SystemMonitoring/NagiosCheck.t" />
-        <File Permission="660" Location="scripts/test/Console/Command/Maint/SystemMonitoring/NagiosCheckTicketCount.t" />
-        <File Permission="660" Location="scripts/test/SystemMonitoring.t" />
-        <File Permission="660" Location="scripts/test/sample/NagiosCheckTesting.pm" />
-        <File Permission="660" Location="scripts/test/sample/SystemMonitoring1.box" />
-        <File Permission="660" Location="scripts/test/sample/SystemMonitoring2.box" />
-        <File Permission="660" Location="var/packagesetup/SystemMonitoring.pm" />
+        <File Permission="660" Location="doc/en/SystemMonitoring.xml"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/SystemMonitoring.xml"/>
+        <File Permission="660" Location="Kernel/Config/NagiosCheck.pm.example"/>
+        <File Permission="660" Location="Kernel/Language/bg_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/de_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/es_MX_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/es_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/hu_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/it_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/ja_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/pl_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/pt_BR_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/ru_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/sk_SK_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/sr_Cyrl_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/sr_Latn_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/Language/zh_CN_SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/System/Console/Command/Maint/SystemMonitoring/NagiosCheck.pm"/>
+        <File Permission="660" Location="Kernel/System/Console/Command/Maint/SystemMonitoring/NagiosCheckTicketCount.pm"/>
+        <File Permission="660" Location="Kernel/System/PostMaster/Filter/SystemMonitoring.pm"/>
+        <File Permission="660" Location="Kernel/System/Ticket/Event/NagiosAcknowledge.pm"/>
+        <File Permission="660" Location="Kernel/System/Ticket/Event/Icinga2Acknowledge.pm"/>
+        <File Permission="660" Location="scripts/test/Console/Command/Maint/SystemMonitoring/NagiosCheck.t"/>
+        <File Permission="660" Location="scripts/test/Console/Command/Maint/SystemMonitoring/NagiosCheckTicketCount.t"/>
+        <File Permission="660" Location="scripts/test/SystemMonitoring.t"/>
+        <File Permission="660" Location="scripts/test/sample/NagiosCheckTesting.pm"/>
+        <File Permission="660" Location="scripts/test/sample/SystemMonitoring1.box"/>
+        <File Permission="660" Location="scripts/test/sample/SystemMonitoring2.box"/>
+        <File Permission="660" Location="var/packagesetup/SystemMonitoring.pm"/>
     </Filelist>
 
     <CodeInstall Type="post"><![CDATA[
