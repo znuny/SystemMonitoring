@@ -1,9 +1,10 @@
-image: registry.znuny.com/znuny/internal/docker-znuny-ci:dev
+image: registry.znuny.com/znuny/internal/docker-znunylts-ci:stable
 
 include:
   - project: 'Znuny/Internal/Znuny'
-    file: '/templates/gitlab/default/default-db.yml'
+    file: '/templates/gitlab/default/default.yml'
 
 default:
   before_script:
     - /run.sh
+
