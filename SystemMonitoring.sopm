@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_package version="1.1">
     <Name>SystemMonitoring</Name>
-    <Version>6.1.0</Version>
+    <Version>6.2.0</Version>
     <Framework>6.2.x</Framework>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
