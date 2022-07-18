@@ -31,10 +31,6 @@ msgstr ""
 "jeśli filtr powinien się wykonać PRZED PostMasterFilter."
 
 #. SysConfig
-msgid "Define Nagios acknowledge type."
-msgstr "Określ typ potwierdzenia Nagiosa."
-
-#. SysConfig
 msgid "HTTP"
 msgstr "HTTP"
 
@@ -77,18 +73,6 @@ msgstr "Nazwa pola dynamicznego dla hosta."
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
 msgstr "Nazwa pola dynamicznego dla Usługi"
-
-#. SysConfig
-msgid "Named pipe acknowledge command."
-msgstr "Komenda do przesyłania potwierdzeń nazwanym potokiem."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for host."
-msgstr "Format przesyłania potwierdzeń nazwanym potokiem dla hosta."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for service."
-msgstr "Format przesyłania potwierdzeń nazwanym potokiem dla usługi."
 
 #. SysConfig
 msgid ""

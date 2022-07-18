@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,7 +21,6 @@ sub Data {
         '系统监控套件的基本邮件接口。仅当此过滤器在邮件管理员过滤器之后运行时使用。';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         '系统监控套件的基本邮件接口。仅当此过滤器在邮件管理员过滤器之前运行时使用。';
-    $Self->{Translation}->{'Define Nagios acknowledge type.'} = '定义Nagios已知问题的类型。';
     $Self->{Translation}->{'HTTP'} = 'HTTP';
     $Self->{Translation}->{'Icinga API URL.'} = 'Icinga API的URL 。';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Icinga2 确认的作者。';
@@ -33,9 +32,6 @@ sub Data {
         '将受影响的配置项链接到已打开的故障工单。此功能只在配置项随后的系统监控邮件到达时才可用。';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = '用于主机的动态字段名称。';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = '用于服务的动态字段名称。';
-    $Self->{Translation}->{'Named pipe acknowledge command.'} = '命名管道已知问题的指令。';
-    $Self->{Translation}->{'Named pipe acknowledge format for host.'} = '命名管道已知问题的主机格式。';
-    $Self->{Translation}->{'Named pipe acknowledge format for service.'} = '命名管道已知问题的服务格式。';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         '当配置项的系统监控邮件到达时自动设置它的故障状态。';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = 'HTTP已知问题的URL。';

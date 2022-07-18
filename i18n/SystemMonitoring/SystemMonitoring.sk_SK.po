@@ -26,10 +26,6 @@ msgid ""
 msgstr ""
 
 #. SysConfig
-msgid "Define Nagios acknowledge type."
-msgstr ""
-
-#. SysConfig
 msgid "HTTP"
 msgstr "HTTP"
 
@@ -69,18 +65,6 @@ msgstr ""
 
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
-msgstr ""
-
-#. SysConfig
-msgid "Named pipe acknowledge command."
-msgstr ""
-
-#. SysConfig
-msgid "Named pipe acknowledge format for host."
-msgstr ""
-
-#. SysConfig
-msgid "Named pipe acknowledge format for service."
 msgstr ""
 
 #. SysConfig

@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,7 +21,6 @@ sub Data {
         'Основной почтовый интерфейс для System Monitoring Suites. Используйте этот блок, если фильтр должен выполняться ПОСЛЕ PostMasterFilter.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Основной почтовый интерфейс для System Monitoring Suites. Используйте этот блок, если фильтр должен выполняться ДО PostMasterFilter.';
-    $Self->{Translation}->{'Define Nagios acknowledge type.'} = 'Определите тип подтверждения Nagios.';
     $Self->{Translation}->{'HTTP'} = 'HTTP';
     $Self->{Translation}->{'Icinga API URL.'} = '';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = '';
@@ -33,9 +32,6 @@ sub Data {
         'Свяжите уже открытый инцидент с затронутым CI. Это возможно только в том случае, если приходит сообщение о последующей проверке электронной почты.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Имя динамического поля для хоста.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Имя динамического поля для службы.';
-    $Self->{Translation}->{'Named pipe acknowledge command.'} = 'Команда подтверждения пайпа.';
-    $Self->{Translation}->{'Named pipe acknowledge format for host.'} = 'Формат подтверждения именованного пайпа для хоста.';
-    $Self->{Translation}->{'Named pipe acknowledge format for service.'} = 'Формат подтверждения именованного пайпа для сервиса.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         'Автоматически задавать состояние инцидента для CI, когда приходит сообщение системы мониторинга.';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = 'URL-адрес подтверждения HTTP.';

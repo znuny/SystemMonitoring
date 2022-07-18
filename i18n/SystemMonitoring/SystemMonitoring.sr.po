@@ -31,10 +31,6 @@ msgstr ""
 "треба да буде пуштен ПРЕ PostMasterFilter."
 
 #. SysConfig
-msgid "Define Nagios acknowledge type."
-msgstr "Одређује Nagios тип потврде."
-
-#. SysConfig
 msgid "HTTP"
 msgstr "HTTP"
 
@@ -77,18 +73,6 @@ msgstr "Назив динамичког поља за сервер."
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
 msgstr "Назив динамичког поља за сервис."
-
-#. SysConfig
-msgid "Named pipe acknowledge command."
-msgstr "Команда потврде именованог канала."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for host."
-msgstr "Формат потврде за хост именованог канала."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for service."
-msgstr "Формат потврде за сервис именованог канала."
 
 #. SysConfig
 msgid ""

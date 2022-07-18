@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,7 +21,6 @@ sub Data {
         'Interface de email básica com Ferramentas de Monitoramento. Use este bloco se o filtro tiver que rodar DEPOIS do PostMasterFilter.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Interface de email básica com Ferramentas de Monitoramento. Use este bloco se o filtro tiver que rodar ANTES do PostMasterFilter.';
-    $Self->{Translation}->{'Define Nagios acknowledge type.'} = 'Definir o tipo de acknowledge do Nagios';
     $Self->{Translation}->{'HTTP'} = 'HTTP';
     $Self->{Translation}->{'Icinga API URL.'} = '';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = '';
@@ -33,9 +32,6 @@ sub Data {
         'Associar um chamado de incidente já criado com o IC afetado. Isto só é possível quando um email de monitoramento subsequente é recebido.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Campo Dinâmico para armazenar o Host';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Campo Dinâmico para armazenar o Serviço';
-    $Self->{Translation}->{'Named pipe acknowledge command.'} = 'Comando para realizar acknowledge no Nagios.';
-    $Self->{Translation}->{'Named pipe acknowledge format for host.'} = 'Formato do acknowledge para host.';
-    $Self->{Translation}->{'Named pipe acknowledge format for service.'} = 'Formato do acknowledge para serviço.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         'Alterar automaticamente o estado de um IC quando um email de monitoramento for recebido.';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = 'URL HTTP do acknowledge.';

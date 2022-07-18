@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,7 +21,6 @@ sub Data {
         'Alapszintű levelezési felület a rendszerfigyelő alkalmazáscsomagokhoz. Akkor használja ezt a blokkot, ha a szűrőt a levelezési szűrő UTÁN kell lefuttatni.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Alapszintű levelezési felület a rendszerfigyelő alkalmazáscsomagokhoz. Akkor használja ezt a blokkot, ha a szűrőt a levelezési szűrő ELŐTT kell lefuttatni.';
-    $Self->{Translation}->{'Define Nagios acknowledge type.'} = 'Nagios nyugtázási típus meghatározása.';
     $Self->{Translation}->{'HTTP'} = 'HTTP';
     $Self->{Translation}->{'Icinga API URL.'} = 'Icinga API URL.';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Icinga2 nyugtázás szerzője.';
@@ -33,9 +32,6 @@ sub Data {
         'Egy már megnyitott incidensjegy összekapcsolása az érintett CI-vel. Ez csak akkor lehetséges, amikor egy következő rendszerfigyelő e-mail érkezik.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'A dinamikus mező neve a gépnél.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'A dinamikus mező neve a szolgáltatásnál.';
-    $Self->{Translation}->{'Named pipe acknowledge command.'} = 'Elnevezett cső nyugtázási parancs.';
-    $Self->{Translation}->{'Named pipe acknowledge format for host.'} = 'Elnevezett cső nyugtázási formátum a gépnél.';
-    $Self->{Translation}->{'Named pipe acknowledge format for service.'} = 'Elnevezett cső nyugtázási formátum a szolgáltatásnál.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         'Egy CI incidensállapotának automatikus beállítása, amikor egy rendszerfigyelő e-mail érkezik.';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = 'A HTTP nyugtázási URL.';

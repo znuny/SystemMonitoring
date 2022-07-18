@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,7 +21,6 @@ sub Data {
         'Основен интерфейс за поща към системния мониторинг. Използвайте този блок, ако филтърът трябва да се изпълнява СЛЕД Филтърът за пощенска администрация';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Основен интерфейс за поща към системния мониторинг. Използвайте този блок, ако филтърът трябва да се изпълнява ПРЕДИ Филтърът за пощенска администрация.';
-    $Self->{Translation}->{'Define Nagios acknowledge type.'} = 'Определете типа признаване на Nagios.';
     $Self->{Translation}->{'HTTP'} = '';
     $Self->{Translation}->{'Icinga API URL.'} = '';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = '';
@@ -33,9 +32,6 @@ sub Data {
         'Свържете вече отворен билет за инцидент със засегнатия CI. Това е възможно само при пристигането на последващ имейл за наблюдение на системата.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Име на динамичното поле за хост.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Име на динамичното поле за обслужване.';
-    $Self->{Translation}->{'Named pipe acknowledge command.'} = 'Команда за потвърждаване на име pipe.';
-    $Self->{Translation}->{'Named pipe acknowledge format for host.'} = '';
-    $Self->{Translation}->{'Named pipe acknowledge format for service.'} = '';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         'Настройте инцидентното състояние на CI автоматично, когато пристигне имейл за мониторинг на системата.';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = '';

@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,7 +21,6 @@ sub Data {
         'Interfaz de correo básico para el System Monitoring Suites. Utilice este bloque si el filtro debe funcionar DESPUÉS del PostMasterFilter.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Interfaz de correo básico para el System Monitoring Suites. Utilice este bloque si el filtro debe funcionar ANTES del PostMasterFilter.';
-    $Self->{Translation}->{'Define Nagios acknowledge type.'} = 'Define el tipo de reconocimiento de Nagios.';
     $Self->{Translation}->{'HTTP'} = 'HTTP';
     $Self->{Translation}->{'Icinga API URL.'} = 'Icinga API URL.';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Icinga2 autor de reconocimiento.';
@@ -33,9 +32,6 @@ sub Data {
         'Enlace un ticket de incidente ya abierto con el CI afectado. Esto sólo es posible cuando llega un correo electrónico de seguimiento del sistema posterior.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Nombre del campo dinámico para el host.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Nombre del campo dinámico para el servicio.';
-    $Self->{Translation}->{'Named pipe acknowledge command.'} = 'Named pipe reconoce el comando.';
-    $Self->{Translation}->{'Named pipe acknowledge format for host.'} = 'Named pipe reconoce el formato para el host.';
-    $Self->{Translation}->{'Named pipe acknowledge format for service.'} = 'Named pipe reconoce el formato para el servicio.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         'Establezca el estado de incidencia de un CI automáticamente cuando llegue un correo electrónico de supervisión del sistema.';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = 'El HTTP reconoce la URL.';

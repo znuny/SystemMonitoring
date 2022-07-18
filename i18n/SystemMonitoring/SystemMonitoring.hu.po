@@ -31,10 +31,6 @@ msgstr ""
 "lefuttatni."
 
 #. SysConfig
-msgid "Define Nagios acknowledge type."
-msgstr "Nagios nyugtázási típus meghatározása."
-
-#. SysConfig
 msgid "HTTP"
 msgstr "HTTP"
 
@@ -77,18 +73,6 @@ msgstr "A dinamikus mező neve a gépnél."
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
 msgstr "A dinamikus mező neve a szolgáltatásnál."
-
-#. SysConfig
-msgid "Named pipe acknowledge command."
-msgstr "Elnevezett cső nyugtázási parancs."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for host."
-msgstr "Elnevezett cső nyugtázási formátum a gépnél."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for service."
-msgstr "Elnevezett cső nyugtázási formátum a szolgáltatásnál."
 
 #. SysConfig
 msgid ""

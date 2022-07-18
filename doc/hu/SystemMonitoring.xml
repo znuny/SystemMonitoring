@@ -290,26 +290,6 @@ felületen. A következő beállítási lehetőségek érhetők el:</para>
         <para>A HTTP nyugtázási felhasználó.</para>
     </section>
     <section>
-        <title>Nagios::Acknowledge::NamedPipe::CMD</title>
-        <para>Navigáció: Core::SystemMonitoring::Nagios.</para>
-        <para>Elnevezett cső nyugtázási parancs.</para>
-    </section>
-    <section>
-        <title>Nagios::Acknowledge::NamedPipe::Host</title>
-        <para>Navigáció: Core::SystemMonitoring::Nagios.</para>
-        <para>Elnevezett cső nyugtázási formátum a gépnél.</para>
-    </section>
-    <section>
-        <title>Nagios::Acknowledge::NamedPipe::Service</title>
-        <para>Navigáció: Core::SystemMonitoring::Nagios.</para>
-        <para>Elnevezett cső nyugtázási formátum a szolgáltatásnál.</para>
-    </section>
-    <section>
-        <title>Nagios::Acknowledge::Type</title>
-        <para>Navigáció: Core::SystemMonitoring::Nagios.</para>
-        <para>Nagios nyugtázási típus meghatározása.</para>
-    </section>
-    <section>
         <title>PostMaster::PreFilterModule###00-SystemMonitoring</title>
         <para>Navigáció: Core::Email::PostMaster.</para>
         <para>Alap levelezési felület a rendszerfigyelő alkalmazáscsomaghoz. Akkor használja ezt a blokkot, ha a szűrőt a levelezési szűrő ELŐTT kell lefuttatni.</para>

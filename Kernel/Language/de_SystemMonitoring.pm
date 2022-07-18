@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -21,7 +21,6 @@ sub Data {
         'Grundlegendes Mail-Interface zu System Monitoring Anwendungen. Benutzen Sie diesen Abschnitt, wenn der Filter NACH dem PostMaster-Filter ausgeführt werden soll.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Grundlegendes Mail-Interface zu System Monitoring Anwendungen. Benutzen Sie diesen Abschnitt, wenn der Filter VOR dem PostMaster-Filter ausgeführt werden soll.';
-    $Self->{Translation}->{'Define Nagios acknowledge type.'} = 'Definiere Nagios-Bestätigungs-Typ .';
     $Self->{Translation}->{'HTTP'} = 'HTTP';
     $Self->{Translation}->{'Icinga API URL.'} = 'Icinga API URL.';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Icinga2 Bestätigungsverfasser';
@@ -33,9 +32,6 @@ sub Data {
         'Verlinkung eines bereits geöffneten Incident Tickets mit einem betroffenen CI. Dies ist nur möglich, wenn eine entsprechende System Monitoring E-Mail eintrifft.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Name des dynamischen Feldes für den Host.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Name des dynamischen Feldes für den Service.';
-    $Self->{Translation}->{'Named pipe acknowledge command.'} = 'Named Pipe Bestätigungskommando';
-    $Self->{Translation}->{'Named pipe acknowledge format for host.'} = 'Named Pipe-Acknowledge-Format für Host.';
-    $Self->{Translation}->{'Named pipe acknowledge format for service.'} = 'Named Pipe-Acknowledge-Format für Service.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         'Setzt den Vorfallstatus eines Configuration Item automatisch, wenn eine E-Mail vom System-Monitoring eintrifft.';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = 'Die URL der HTTP-Bestätigung.';

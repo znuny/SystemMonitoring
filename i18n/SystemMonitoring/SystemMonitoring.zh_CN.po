@@ -26,10 +26,6 @@ msgid ""
 msgstr "系统监控套件的基本邮件接口。仅当此过滤器在邮件管理员过滤器之前运行时使用。"
 
 #. SysConfig
-msgid "Define Nagios acknowledge type."
-msgstr "定义Nagios已知问题的类型。"
-
-#. SysConfig
 msgid "HTTP"
 msgstr "HTTP"
 
@@ -70,18 +66,6 @@ msgstr "用于主机的动态字段名称。"
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
 msgstr "用于服务的动态字段名称。"
-
-#. SysConfig
-msgid "Named pipe acknowledge command."
-msgstr "命名管道已知问题的指令。"
-
-#. SysConfig
-msgid "Named pipe acknowledge format for host."
-msgstr "命名管道已知问题的主机格式。"
-
-#. SysConfig
-msgid "Named pipe acknowledge format for service."
-msgstr "命名管道已知问题的服务格式。"
 
 #. SysConfig
 msgid ""

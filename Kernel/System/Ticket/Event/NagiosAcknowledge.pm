@@ -1,6 +1,6 @@
 # --
 # Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -63,11 +63,6 @@ sub Run {
         return;
     }
 
-    # check if acknowledge is active
-    my $Type = $Kernel::OM->Get('Kernel::Config')->Get('Nagios::Acknowledge::Type');
-
-    return 1 if !$Type;
-
     # get ticket object
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
 
@@ -94,33 +89,16 @@ sub Run {
         Cached => 1,                # not required -> 0|1 (default 0)
     );
 
-    my $Return;
-    if ( $Type eq 'pipe' ) {
-        $Return = $Self->_Pipe(
-            Ticket => \%Ticket,
-            User   => \%User,
-        );
-    }
-    elsif ( $Type eq 'http' ) {
-        $Return = $Self->_HTTP(
-            Ticket => \%Ticket,
-            User   => \%User,
-        );
-    }
-    else {
-        $Kernel::OM->Get('Kernel::System::Log')->Log(
-            Priority => 'error',
-            Message  => "Unknown Nagios acknowledge type ($Type)!",
-        );
-
-        return 1;
-    }
+    my $Return = $Self->_HTTP(
+        Ticket => \%Ticket,
+        User   => \%User,
+    );
 
     if ($Return) {
         $TicketObject->HistoryAdd(
             TicketID     => $Param{Data}->{TicketID},
             HistoryType  => 'Misc',
-            Name         => "Sent Acknowledge to Nagios ($Type).",
+            Name         => "Sent Acknowledge to Nagios (http).",
             CreateUserID => $Param{UserID},
         );
 
@@ -130,78 +108,12 @@ sub Run {
         $TicketObject->HistoryAdd(
             TicketID     => $Param{Data}->{TicketID},
             HistoryType  => 'Misc',
-            Name         => "Was not able to send Acknowledge to Nagios ($Type)!",
+            Name         => "Was not able to send Acknowledge to Nagios (http)!",
             CreateUserID => $Param{UserID},
         );
 
         return;
     }
-}
-
-sub _Pipe {
-    my ( $Self, %Param ) = @_;
-
-    # check needed stuff
-    for my $Needed (qw(Ticket User)) {
-        if ( !$Param{$Needed} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
-                Priority => 'error',
-                Message  => "Need $Needed!",
-            );
-
-            return;
-        }
-    }
-    my %Ticket = %{ $Param{Ticket} };
-    my %User   = %{ $Param{User} };
-
-    # get config object
-    my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
-
-    # send acknowledge to nagios
-    my $CMD = $ConfigObject->Get('Nagios::Acknowledge::NamedPipe::CMD');
-    my $Data;
-    if ( $Ticket{ $Self->{Fservice} } !~ /^host$/i ) {
-        $Data = $ConfigObject->Get('Nagios::Acknowledge::NamedPipe::Service');
-    }
-    else {
-        $Data = $ConfigObject->Get('Nagios::Acknowledge::NamedPipe::Host');
-    }
-
-    # replace ticket tags
-    TICKET:
-    for my $Key ( sort keys %Ticket ) {
-        next TICKET if !defined $Ticket{$Key};
-
-        # strip not allowed characters
-        $Ticket{$Key} =~ s/'//g;
-        $Ticket{$Key} =~ s/;//g;
-        $Data         =~ s/<$Key>/$Ticket{$Key}/g;
-    }
-
-    # replace config tags
-    $Data =~ s{<CONFIG_(.+?)>}{$Kernel::OM->Get('Kernel::Config')->Get($1)}egx;
-
-    # replace login
-    $Data =~ s/<LOGIN>/$User{UserLogin}/g;
-
-    # replace host
-    $Data =~ s/<HOST_NAME>/$Ticket{$Self->{Fhost}}/g;
-
-    # replace time stamp
-    $Data =~ s/<SERVICE_NAME>/$Ticket{$Self->{Fservice}}/g;
-
-    # replace time stamp
-    my $Time = time();
-    $Data =~ s/<UNIXTIME>/$Time/g;
-
-    # replace OUTPUTSTRING
-    $CMD =~ s/<OUTPUTSTRING>/$Data/g;
-
-    #print STDOUT "$CMD\n";
-    system($CMD);
-
-    return 1;
 }
 
 sub _HTTP {
