@@ -27,10 +27,6 @@ msgstr ""
 "bloque si el filtro debe funcionar ANTES del PostMasterFilter."
 
 #. SysConfig
-msgid "Define Nagios acknowledge type."
-msgstr "Define el tipo de reconocimiento de Nagios."
-
-#. SysConfig
 msgid "HTTP"
 msgstr "HTTP"
 
@@ -74,18 +70,6 @@ msgstr "Nombre del campo dinámico para el host."
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
 msgstr "Nombre del campo dinámico para el servicio."
-
-#. SysConfig
-msgid "Named pipe acknowledge command."
-msgstr "Named pipe reconoce el comando."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for host."
-msgstr "Named pipe reconoce el formato para el host."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for service."
-msgstr "Named pipe reconoce el formato para el servicio."
 
 #. SysConfig
 msgid ""

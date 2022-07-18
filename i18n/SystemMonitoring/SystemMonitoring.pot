@@ -19,10 +19,6 @@ msgid "Basic mail interface to System Monitoring Suites. Use this block if the f
 msgstr ""
 
 #. SysConfig
-msgid "Define Nagios acknowledge type."
-msgstr ""
-
-#. SysConfig
 msgid "HTTP"
 msgstr ""
 
@@ -60,18 +56,6 @@ msgstr ""
 
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
-msgstr ""
-
-#. SysConfig
-msgid "Named pipe acknowledge command."
-msgstr ""
-
-#. SysConfig
-msgid "Named pipe acknowledge format for host."
-msgstr ""
-
-#. SysConfig
-msgid "Named pipe acknowledge format for service."
 msgstr ""
 
 #. SysConfig

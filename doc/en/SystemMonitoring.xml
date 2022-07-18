@@ -286,26 +286,6 @@ shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
         <para>The HTTP acknowledge user.</para>
     </section>
     <section>
-        <title>Nagios::Acknowledge::NamedPipe::CMD</title>
-        <para>Navigation: Core::SystemMonitoring::Nagios.</para>
-        <para>Named pipe acknowledge command.</para>
-    </section>
-    <section>
-        <title>Nagios::Acknowledge::NamedPipe::Host</title>
-        <para>Navigation: Core::SystemMonitoring::Nagios.</para>
-        <para>Named pipe acknowledge format for host.</para>
-    </section>
-    <section>
-        <title>Nagios::Acknowledge::NamedPipe::Service</title>
-        <para>Navigation: Core::SystemMonitoring::Nagios.</para>
-        <para>Named pipe acknowledge format for service.</para>
-    </section>
-    <section>
-        <title>Nagios::Acknowledge::Type</title>
-        <para>Navigation: Core::SystemMonitoring::Nagios.</para>
-        <para>Define Nagios acknowledge type.</para>
-    </section>
-    <section>
         <title>PostMaster::PreFilterModule###00-SystemMonitoring</title>
         <para>Navigation: Core::Email::PostMaster.</para>
         <para>Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.</para>

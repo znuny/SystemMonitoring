@@ -27,10 +27,6 @@ msgstr ""
 "блок, если фильтр должен выполняться ДО PostMasterFilter."
 
 #. SysConfig
-msgid "Define Nagios acknowledge type."
-msgstr "Определите тип подтверждения Nagios."
-
-#. SysConfig
 msgid "HTTP"
 msgstr "HTTP"
 
@@ -73,18 +69,6 @@ msgstr "Имя динамического поля для хоста."
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
 msgstr "Имя динамического поля для службы."
-
-#. SysConfig
-msgid "Named pipe acknowledge command."
-msgstr "Команда подтверждения пайпа."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for host."
-msgstr "Формат подтверждения именованного пайпа для хоста."
-
-#. SysConfig
-msgid "Named pipe acknowledge format for service."
-msgstr "Формат подтверждения именованного пайпа для сервиса."
 
 #. SysConfig
 msgid ""

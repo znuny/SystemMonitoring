@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -20,7 +21,6 @@ sub Data {
         'Osnovni imejl interfejs za sistemski nadzor. Koristite ovaj blok ako filter treba da bude pušten POSLE PostMasterFilter.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Osnovni imejl interfejs za sistemski nadzor. Koristite ovaj blok ako filter treba da bude pušten PRE PostMasterFilter.';
-    $Self->{Translation}->{'Define Nagios acknowledge type.'} = 'Određuje Nagios tip potvrde.';
     $Self->{Translation}->{'HTTP'} = 'HTTP';
     $Self->{Translation}->{'Icinga API URL.'} = 'Adresa Icinga API.';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Icinga2 autor potvrde.';
@@ -32,9 +32,6 @@ sub Data {
         'Poveži već otvoreni tiket incidenta sa pogođenom konfiguracionom stavkom. Ovo je jedino moguće kada stigne sledeći imejl od sistemskog nadzora.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Naziv dinamičkog polja za server.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Naziv dinamičkog polja za servis.';
-    $Self->{Translation}->{'Named pipe acknowledge command.'} = 'Komanda potvrde imenovanog kanala.';
-    $Self->{Translation}->{'Named pipe acknowledge format for host.'} = 'Format potvrde za host imenovanog kanala.';
-    $Self->{Translation}->{'Named pipe acknowledge format for service.'} = 'Format potvrde za servis imenovanog kanala.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         'Postavi automatski stanje incidenta konfiguracione stavke kada stigne imejl od sistemskog nadzora.';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = 'Adresa HTTP potvrde.';

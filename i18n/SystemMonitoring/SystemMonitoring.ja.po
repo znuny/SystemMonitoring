@@ -29,10 +29,6 @@ msgstr ""
 "す。"
 
 #. SysConfig
-msgid "Define Nagios acknowledge type."
-msgstr "Nagiosの確認タイプを定義します。"
-
-#. SysConfig
 msgid "HTTP"
 msgstr "HTTP"
 
@@ -75,18 +71,6 @@ msgstr "ホストのダイナミック・フィールドの名前。"
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
 msgstr "サービスのダイナミック・フィールドの名前。"
-
-#. SysConfig
-msgid "Named pipe acknowledge command."
-msgstr "コマンドパイプ承認形式"
-
-#. SysConfig
-msgid "Named pipe acknowledge format for host."
-msgstr "ホストの名前付きパイプ承認形式"
-
-#. SysConfig
-msgid "Named pipe acknowledge format for service."
-msgstr "サービスの名前付きパイプ承認形式"
 
 #. SysConfig
 msgid ""

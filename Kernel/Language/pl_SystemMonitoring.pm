@@ -1,5 +1,6 @@
 # --
-# Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
+# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (GPL). If you
@@ -20,7 +21,6 @@ sub Data {
         'Podstawowy interfejs e-mailowy dla Systemów Monitorujących. Użyj tego bloku, jeśli filtr powinien się wykonać PO PostMasterFilter.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Podstawowy interfejs e-mailowy dla Systemów Monitorujących. Użyj tego bloku, jeśli filtr powinien się wykonać PRZED PostMasterFilter.';
-    $Self->{Translation}->{'Define Nagios acknowledge type.'} = 'Określ typ potwierdzenia Nagiosa.';
     $Self->{Translation}->{'HTTP'} = 'HTTP';
     $Self->{Translation}->{'Icinga API URL.'} = 'URL do API Ininga';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Autor potwierdzenia Icinga2.';
@@ -32,9 +32,6 @@ sub Data {
         'Połącz już otwarte zgłoszenie zdarzenia z dotyczącym go CI. Jest to możliwe wtedy, gdy nadejdzie kolejny email z systemu monitorującego.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Nazwa pola dynamicznego dla hosta.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Nazwa pola dynamicznego dla Usługi';
-    $Self->{Translation}->{'Named pipe acknowledge command.'} = 'Komenda do przesyłania potwierdzeń nazwanym potokiem.';
-    $Self->{Translation}->{'Named pipe acknowledge format for host.'} = 'Format przesyłania potwierdzeń nazwanym potokiem dla hosta.';
-    $Self->{Translation}->{'Named pipe acknowledge format for service.'} = 'Format przesyłania potwierdzeń nazwanym potokiem dla usługi.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         'Ustaw automatycznie stan zdarzenia dla CI, gdy nadejdzie e-mail z monitoringu.';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = 'URL HTTP dlo potwierdzeń.';
