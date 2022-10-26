@@ -39,6 +39,7 @@ sub Data {
     $Self->{Translation}->{'The HTTP acknowledge user.'} = 'Der HTTP-Bestätigungsbenutzer.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = 'Ticket-Ereignismodul, um eine Bestätigung an Icinga2 zu senden.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = 'Ticket-Ereignismodul, um eine Bestätigung zu Nagios zu senden.';
+    $Self->{Translation}->{'Defines if closed tickets will be unlocked.'} = 'Bestimmt, ob geschlossene Tickets entsperrt werden.';
     $Self->{Translation}->{'pipe'} = 'Pipe';
 
 

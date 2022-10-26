@@ -458,6 +458,9 @@ sub _TicketUpdate {
 
         # Close Ticket Condition -> Take Close Action
         if ( $Self->{Config}->{CloseActionState} ne 'OLD' ) {
+            my $UnlockTicketOnClose = $ConfigObject->Get('SystemMonitoring::PostMaster')->{UnlockTicketOnClose} || 0;
+
+            $Param->{GetParam}->{'X-OTRS-FollowUp-Lock'}  = 'unlock' if $UnlockTicketOnClose;
             $Param->{GetParam}->{'X-OTRS-FollowUp-State'} = $Self->{Config}->{CloseActionState};
 
             # get datetime object
