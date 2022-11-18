@@ -8,7 +8,7 @@
 # --
 
 package var::packagesetup::SystemMonitoring;
-## no critic(Perl::Critic::Policy::OTRS::RequireCamelCase)
+## no critic(Perl::Critic::Policy::Znuny::RequireCamelCase)
 
 use strict;
 use warnings;
