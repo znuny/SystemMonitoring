@@ -36,7 +36,7 @@ msgstr "HTTP"
 
 #. SysConfig
 msgid "Icinga API URL."
-msgstr "URL do API Icinga"
+msgstr "URL do API Icinga."
 
 #. SysConfig
 msgid "Icinga2 acknowledgement author."
@@ -72,7 +72,7 @@ msgstr "Nazwa pola dynamicznego dla hosta."
 
 #. SysConfig
 msgid "Name of the Dynamic Field for Service."
-msgstr "Nazwa pola dynamicznego dla Usługi"
+msgstr "Nazwa pola dynamicznego dla Usługi."
 
 #. SysConfig
 msgid ""
@@ -96,7 +96,8 @@ msgstr "Użytkownik HTTP dla potwierdzeń."
 
 #. SysConfig
 msgid "Ticket event module to send an acknowledge to Icinga2."
-msgstr "Nazwa modułu obsługi zdarzeń zgłoszenia do wysyłki potwierdzeń Icinga2."
+msgstr ""
+"Nazwa modułu obsługi zdarzeń zgłoszenia do wysyłki potwierdzeń Icinga2."
 
 #. SysConfig
 msgid "Ticket event module to send an acknowledge to Nagios."
@@ -105,3 +106,19 @@ msgstr "Nazwa modułu obsługi zgłoszenia do wysyłki potwierdzeń do Nagiosa."
 #. SysConfig
 msgid "pipe"
 msgstr "potok"
+
+#. SysConfig
+msgid "Define Nagios acknowledge type."
+msgstr "Określ typ potwierdzenia Nagiosa."
+
+#. SysConfig
+msgid "Named pipe acknowledge command."
+msgstr "Komenda do przesyłania potwierdzeń nazwanym potokiem."
+
+#. SysConfig
+msgid "Named pipe acknowledge format for host."
+msgstr "Format przesyłania potwierdzeń nazwanym potokiem dla hosta."
+
+#. SysConfig
+msgid "Named pipe acknowledge format for service."
+msgstr "Format przesyłania potwierdzeń nazwanym potokiem dla usługi."
