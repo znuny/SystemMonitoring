@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SystemMonitoring\n"
-"POT-Creation-Date: 2020-01-24 14:45+0000\n"
+"POT-Creation-Date: 2022-11-25 09:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgid "Basic mail interface to System Monitoring Suites. Use this block if the f
 msgstr ""
 
 #. SysConfig
-msgid "HTTP"
+msgid "Defines if closed tickets will be unlocked."
 msgstr ""
 
 #. SysConfig
@@ -80,9 +80,5 @@ msgstr ""
 
 #. SysConfig
 msgid "Ticket event module to send an acknowledge to Nagios."
-msgstr ""
-
-#. SysConfig
-msgid "pipe"
 msgstr ""
 

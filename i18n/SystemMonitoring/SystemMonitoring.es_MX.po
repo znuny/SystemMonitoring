@@ -4,8 +4,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-24 14:45+0000\n"
 "PO-Revision-Date: 2022-01-21 10:41+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Spanish (Mexico) <https://translations.znuny.org/projects/"
-"znuny/systemmonitoring/es_MX/>\n"
+"Language-Team: Spanish (Mexico) <https://translations.znuny.org/projects/znuny/systemmonitoring/es_MX/>\n"
 "Language: es_MX\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,20 +13,12 @@ msgstr ""
 "X-Generator: Weblate 4.8\n"
 
 #. SysConfig
-msgid ""
-"Basic mail interface to System Monitoring Suites. Use this block if the "
-"filter should run AFTER PostMasterFilter."
-msgstr ""
-"Interface básica de correo para las Suites de Monitoreo de Sistema. Utilice "
-"este bloque, si el filtro debe correr DESPUÉS del 'PostMasterFilter'."
+msgid "Basic mail interface to System Monitoring Suites. Use this block if the filter should run AFTER PostMasterFilter."
+msgstr "Interface básica de correo para las Suites de Monitoreo de Sistema. Utilice este bloque, si el filtro debe correr DESPUÉS del 'PostMasterFilter'."
 
 #. SysConfig
-msgid ""
-"Basic mail interface to System Monitoring Suites. Use this block if the "
-"filter should run BEFORE PostMasterFilter."
-msgstr ""
-"Interface básica de correo para las Suites de Monitoreo de Sistema. Utilice "
-"este bloque, si el filtro debe correr ANTES del 'PostMasterFilter'."
+msgid "Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter."
+msgstr "Interface básica de correo para las Suites de Monitoreo de Sistema. Utilice este bloque, si el filtro debe correr ANTES del 'PostMasterFilter'."
 
 #. SysConfig
 msgid "HTTP"
@@ -58,12 +49,8 @@ msgid "Icinga2 acknowledgement sticky."
 msgstr ""
 
 #. SysConfig
-msgid ""
-"Link an already opened incident ticket with the affected CI. This is only "
-"possible when a subsequent system monitoring email arrives."
-msgstr ""
-"Vincula un incidente que ya está abierto con el 'CI' afectado. Esto solo es "
-"posible cuando un siguiente correo del sistema de monitoreo llega."
+msgid "Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives."
+msgstr "Vincula un incidente que ya está abierto con el 'CI' afectado. Esto solo es posible cuando un siguiente correo del sistema de monitoreo llega."
 
 #. SysConfig
 msgid "Name of the Dynamic Field for Host."
@@ -74,12 +61,8 @@ msgid "Name of the Dynamic Field for Service."
 msgstr "Nombre del Campo Dinámico para el Servicio"
 
 #. SysConfig
-msgid ""
-"Set the incident state of a CI automatically when a system monitoring email "
-"arrives."
-msgstr ""
-"Fijar el estado de incidente de un 'CI' automáticamente cuando un correo "
-"electrónico del sistema de monitoreo llega."
+msgid "Set the incident state of a CI automatically when a system monitoring email arrives."
+msgstr "Fijar el estado de incidente de un 'CI' automáticamente cuando un correo electrónico del sistema de monitoreo llega."
 
 #. SysConfig
 msgid "The HTTP acknowledge URL."
@@ -104,3 +87,8 @@ msgstr "Módulo de eventos de ticket para mandar el reconocimiento a Nagios."
 #. SysConfig
 msgid "pipe"
 msgstr "tubería"
+
+#. SysConfig
+msgid "Defines if closed tickets will be unlocked."
+msgstr ""
+

@@ -1,10 +1,9 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::it_SystemMonitoring;
@@ -21,7 +20,7 @@ sub Data {
         'Interfaccia di posta elettronica di base per Suite di monitoraggio del sistema. Utilizzare questo blocco se il filtro deve essere eseguito DOPO PostMasterFilter.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Interfaccia di posta elettronica di base per Suite di monitoraggio del sistema. Utilizzare questo blocco se il filtro deve essere eseguito PRIMA di PostMasterFilter.';
-    $Self->{Translation}->{'HTTP'} = 'HTTP';
+    $Self->{Translation}->{'Defines if closed tickets will be unlocked.'} = '';
     $Self->{Translation}->{'Icinga API URL.'} = 'Icinga API URL.';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Autore del riconoscimento Icinga2.';
     $Self->{Translation}->{'Icinga2 acknowledgement comment.'} = 'Commento di riconoscimento Icinga2.';
@@ -39,7 +38,6 @@ sub Data {
     $Self->{Translation}->{'The HTTP acknowledge user.'} = 'L\'utente HTTP riconosciuto.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = 'Modulo evento Ticket per inviare un riconoscimento a Icinga2.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = 'Modulo evento Ticket per inviare un riconoscimento a Nagios.';
-    $Self->{Translation}->{'pipe'} = 'pipe';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (

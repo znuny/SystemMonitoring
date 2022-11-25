@@ -1,10 +1,9 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::pl_SystemMonitoring;
@@ -21,8 +20,8 @@ sub Data {
         'Podstawowy interfejs e-mailowy dla Systemów Monitorujących. Użyj tego bloku, jeśli filtr powinien się wykonać PO PostMasterFilter.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Podstawowy interfejs e-mailowy dla Systemów Monitorujących. Użyj tego bloku, jeśli filtr powinien się wykonać PRZED PostMasterFilter.';
-    $Self->{Translation}->{'HTTP'} = 'HTTP';
-    $Self->{Translation}->{'Icinga API URL.'} = 'URL do API Ininga';
+    $Self->{Translation}->{'Defines if closed tickets will be unlocked.'} = '';
+    $Self->{Translation}->{'Icinga API URL.'} = 'URL do API Icinga.';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Autor potwierdzenia Icinga2.';
     $Self->{Translation}->{'Icinga2 acknowledgement comment.'} = 'Komentarz do potwierdzenia Icinga2.';
     $Self->{Translation}->{'Icinga2 acknowledgement enabled?'} = 'Czy potwierdzenia Icinga2 są włączone?';
@@ -31,7 +30,7 @@ sub Data {
     $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives.'} =
         'Połącz już otwarte zgłoszenie zdarzenia z dotyczącym go CI. Jest to możliwe wtedy, gdy nadejdzie kolejny email z systemu monitorującego.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Nazwa pola dynamicznego dla hosta.';
-    $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Nazwa pola dynamicznego dla Usługi';
+    $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Nazwa pola dynamicznego dla Usługi.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
         'Ustaw automatycznie stan zdarzenia dla CI, gdy nadejdzie e-mail z monitoringu.';
     $Self->{Translation}->{'The HTTP acknowledge URL.'} = 'URL HTTP dlo potwierdzeń.';
@@ -39,7 +38,6 @@ sub Data {
     $Self->{Translation}->{'The HTTP acknowledge user.'} = 'Użytkownik HTTP dla potwierdzeń.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = 'Nazwa modułu obsługi zdarzeń zgłoszenia do wysyłki potwierdzeń Icinga2.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = 'Nazwa modułu obsługi zgłoszenia do wysyłki potwierdzeń do Nagiosa.';
-    $Self->{Translation}->{'pipe'} = 'potok';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (

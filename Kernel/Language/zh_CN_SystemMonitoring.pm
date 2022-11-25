@@ -1,10 +1,9 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::zh_CN_SystemMonitoring;
@@ -21,7 +20,7 @@ sub Data {
         '系统监控套件的基本邮件接口。仅当此过滤器在邮件管理员过滤器之后运行时使用。';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         '系统监控套件的基本邮件接口。仅当此过滤器在邮件管理员过滤器之前运行时使用。';
-    $Self->{Translation}->{'HTTP'} = 'HTTP';
+    $Self->{Translation}->{'Defines if closed tickets will be unlocked.'} = '';
     $Self->{Translation}->{'Icinga API URL.'} = 'Icinga API的URL 。';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Icinga2 确认的作者。';
     $Self->{Translation}->{'Icinga2 acknowledgement comment.'} = 'Icinga2 确认的注释。';
@@ -39,7 +38,6 @@ sub Data {
     $Self->{Translation}->{'The HTTP acknowledge user.'} = 'HTTP已知问题的用户名。';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = '发送一个确认到Icinga2的工单事件模块。';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = '发送一个已知问题到Nagios的工单事件模块。';
-    $Self->{Translation}->{'pipe'} = '管道';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (

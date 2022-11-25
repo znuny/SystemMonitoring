@@ -1,10 +1,9 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::sr_Latn_SystemMonitoring;
@@ -21,7 +20,7 @@ sub Data {
         'Osnovni imejl interfejs za sistemski nadzor. Koristite ovaj blok ako filter treba da bude pušten POSLE PostMasterFilter.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Osnovni imejl interfejs za sistemski nadzor. Koristite ovaj blok ako filter treba da bude pušten PRE PostMasterFilter.';
-    $Self->{Translation}->{'HTTP'} = 'HTTP';
+    $Self->{Translation}->{'Defines if closed tickets will be unlocked.'} = '';
     $Self->{Translation}->{'Icinga API URL.'} = 'Adresa Icinga API.';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Icinga2 autor potvrde.';
     $Self->{Translation}->{'Icinga2 acknowledgement comment.'} = 'Icinga2 komentar potvrde.';
@@ -39,7 +38,6 @@ sub Data {
     $Self->{Translation}->{'The HTTP acknowledge user.'} = 'Korisnik HTTP potvrde.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = 'Modul događaja tiketa za slanje potvrde za Icinga2.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = 'Modul događaja tiketa za slanje potvrde za Nagios.';
-    $Self->{Translation}->{'pipe'} = 'kanal';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (

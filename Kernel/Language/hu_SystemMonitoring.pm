@@ -1,10 +1,9 @@
 # --
-# Copyright (C) 2001-2021 OTRS AG, https://otrs.com/
-# Copyright (C) 2021-2022 Znuny GmbH, https://znuny.org/
+# Copyright (C) 2012-2022 Znuny GmbH, https://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
-# the enclosed file COPYING for license information (GPL). If you
-# did not receive this file, see https://www.gnu.org/licenses/gpl-3.0.txt.
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
 package Kernel::Language::hu_SystemMonitoring;
@@ -21,7 +20,7 @@ sub Data {
         'Alapszintű levelezési felület a rendszerfigyelő alkalmazáscsomagokhoz. Akkor használja ezt a blokkot, ha a szűrőt a levelezési szűrő UTÁN kell lefuttatni.';
     $Self->{Translation}->{'Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.'} =
         'Alapszintű levelezési felület a rendszerfigyelő alkalmazáscsomagokhoz. Akkor használja ezt a blokkot, ha a szűrőt a levelezési szűrő ELŐTT kell lefuttatni.';
-    $Self->{Translation}->{'HTTP'} = 'HTTP';
+    $Self->{Translation}->{'Defines if closed tickets will be unlocked.'} = '';
     $Self->{Translation}->{'Icinga API URL.'} = 'Icinga API URL.';
     $Self->{Translation}->{'Icinga2 acknowledgement author.'} = 'Icinga2 nyugtázás szerzője.';
     $Self->{Translation}->{'Icinga2 acknowledgement comment.'} = 'Icinga2 nyugtázás megjegyzése.';
@@ -39,7 +38,6 @@ sub Data {
     $Self->{Translation}->{'The HTTP acknowledge user.'} = 'A HTTP nyugtázási felhasználó.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = 'Jegyesemény modul egy nyugta küldéséhez a Icinga2 számára.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = 'Jegyesemény modul egy nyugta küldéséhez a Nagios számára.';
-    $Self->{Translation}->{'pipe'} = 'cső';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
