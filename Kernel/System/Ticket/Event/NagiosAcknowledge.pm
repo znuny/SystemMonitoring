@@ -63,6 +63,11 @@ sub Run {
         return;
     }
 
+    # Check if acknowledge is active.
+    my $Enabled = $Kernel::OM->Get('Kernel::Config')->Get('Nagios::Acknowledge::Enabled');
+
+    return 1 if !$Enabled;
+
     # get ticket object
     my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
 

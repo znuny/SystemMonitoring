@@ -27,6 +27,7 @@ sub Data {
     $Self->{Translation}->{'Icinga2 acknowledgement enabled?'} = 'Icinga2 Bestätigung aktiviert?';
     $Self->{Translation}->{'Icinga2 acknowledgement notify.'} = 'Icinga2 Bestätigungsnachricht.';
     $Self->{Translation}->{'Icinga2 acknowledgement sticky.'} = 'Icinga2 acknowledgement sticky.';
+    $Self->{Translation}->{'Nagios acknowledgement enabled?'} = 'Nagios-Bestätigung aktiviert?';
     $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives.'} =
         'Verlinkung eines bereits geöffneten Incident Tickets mit einem betroffenen CI. Dies ist nur möglich, wenn eine entsprechende System Monitoring E-Mail eintrifft.';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Name des dynamischen Feldes für den Host.';

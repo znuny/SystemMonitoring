@@ -192,4 +192,11 @@
             <Item ValueType="Checkbox">0</Item>
         </Value>
     </Setting>
+    <Setting Name="Nagios::Acknowledge::Enabled" Required="1" Valid="1">
+        <Description Translatable="1">Nagios acknowledgement enabled?</Description>
+        <Navigation>Core::SystemMonitoring::Nagios</Navigation>
+        <Value>
+            <Item ValueType="Checkbox">0</Item>
+        </Value>
+    </Setting>
 </otrs_config>

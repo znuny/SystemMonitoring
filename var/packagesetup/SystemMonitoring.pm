@@ -158,7 +158,7 @@ my $Result = $CodeObject->CodeUpgradeFromLowerThan_2_2_92();
 
 =cut
 
-sub CodeUpgradeFromLowerThan_2_2_92 {
+sub CodeUpgradeFromLowerThan_2_2_92 {    ## no critic
     my ( $Self, %Param ) = @_;
 
     # get the definition for all dynamic fields for SystemMonitoring
