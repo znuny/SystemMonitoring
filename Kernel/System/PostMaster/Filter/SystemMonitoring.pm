@@ -39,12 +39,7 @@ sub new {
 
     $Self->{Debug} = $Param{Debug} || 0;
 
-    # check if CI incident state should be set automatically
-    # this requires the ITSMConfigurationManagement module to be installed
-    if ( $Kernel::OM->Get('Kernel::Config')->Get('SystemMonitoring::SetIncidentState') ) {
-
-        $Self->_IncidentStateNew();
-    }
+    $Self->_BasicModulesInit();
 
     # Default Settings
     $Self->{Config} = {
@@ -183,21 +178,21 @@ sub _IncidentStateOperational {
 
 # these are optional modules from the ITSM Kernel::System::GeneralCatalog and Kernel::System::ITSMConfigItem
 
-sub _IncidentStateNew {
+sub _BasicModulesInit {
     my ( $Self, %Param ) = @_;
 
     # get main object
     my $MainObject = $Kernel::OM->Get('Kernel::System::Main');
 
     # require the general catalog module
-    if ( $MainObject->Require('Kernel::System::GeneralCatalog') ) {
+    if ( $MainObject->Require( 'Kernel::System::GeneralCatalog', Silent => 1 ) ) {
 
         # create general catalog object
         $Self->{GeneralCatalogObject} = Kernel::System::GeneralCatalog->new( %{$Self} );
     }
 
     # require the config item module
-    if ( $MainObject->Require('Kernel::System::ITSMConfigItem') ) {
+    if ( $MainObject->Require( 'Kernel::System::ITSMConfigItem', Silent => 1 ) ) {
 
         # create config item object
         $Self->{ConfigItemObject} = Kernel::System::ITSMConfigItem->new( %{$Self} );
