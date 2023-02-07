@@ -56,16 +56,6 @@
         elküldve (nézze meg a beállítás fejezetet). Az Icinga2 programban ez a kérés lesz használva
         az új incidensek létrehozásához vagy megerősítéséhez.
     </para>
-    <para>
-        Ha kérdései vannak ezzel a dokumentummal kapcsolatban, vagy további információkra van
-        szüksége, akkor lépjen be az OTRS azonosítójával a
-        <ulink url="https://portal.otrs.com">portal.otrs.com</ulink> címen lévő ügyfélportálunkra,
-        és hozzon létre egy jegyet.
-    </para>
-    <para>
-        Még nincs OTRS azonosítója?
-        <ulink url="https://portal.otrs.com/otrs/customer.pl#Signup">Regisztráljon itt ingyenesen.</ulink>
-    </para>
 </preface>
 
 <!-- *************** -->
@@ -87,7 +77,7 @@ A levél illeszkedik a „FromAddress” értékre?
 +-> NEM  -> Folytatás a szabályos levélfeldolgozással
 |
 +-> IGEN -> Létezik már a megegyező gép/szolgáltatás kombinációval egy
-            jegy az OTRS-ben?
+            jegy az Znuny-ben?
             |
             +-> NEM  -> A „State:” illeszkedik erre: „NewTicketRegExp”?
             |           |
@@ -132,7 +122,7 @@ A levél illeszkedik a „FromAddress” értékre?
     <section>
         <title>Keretrendszer</title>
         <para>
-            A következő OTRS keretrendszer szükséges:
+            A következő Znuny keretrendszer szükséges:
         </para>
         <para>
             $Framework
@@ -364,7 +354,7 @@ felületen. A következő beállítási lehetőségek érhetők el:</para>
 <chapter>
     <title>Tesztek</title>
     <para>
-        Ez a modul minőségbiztosításon esett át a jelenlegi OTRS iránymutatások szerint.
+        Ez a modul minőségbiztosításon esett át a jelenlegi Znuny iránymutatások szerint.
     </para>
     <section>
         <title>Tesztesetek</title>

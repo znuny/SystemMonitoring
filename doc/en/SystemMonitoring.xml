@@ -54,16 +54,6 @@
         request which is send to the configured Icinga2 host (please see configuration chapter).
         In Icinga2, this request is used to create or to confirm new incidents.
     </para>
-    <para>
-        If you have questions regarding this document or if you need further information, please
-        log in to our customer portal at
-        <ulink url="https://portal.otrs.com">portal.otrs.com</ulink>
-        with your OTRS ID and create a ticket.
-    </para>
-    <para>
-        You do not have an OTRS ID yet?
-        <ulink url="https://portal.otrs.com/otrs/customer.pl#Signup">Register here for free.</ulink>
-    </para>
 </preface>
 
 <!-- *************** -->
@@ -85,7 +75,7 @@ Mail matches 'FromAddress'?
 +-> NO  --> Continue with regular mail processing
 |
 +-> YES --> Does a ticket with matching Host/Service combination
-            already exist in OTRS?
+            already exist in Znuny?
             |
             +-> NO  -> Does 'State:' match 'NewTicketRegExp'?
             |          |
@@ -130,7 +120,7 @@ Mail matches 'FromAddress'?
     <section>
         <title>Framework</title>
         <para>
-            The following OTRS Framework is required:
+            The following Znuny Framework is required:
         </para>
         <para>
             $Framework
@@ -361,7 +351,7 @@ shell> bin/otrs.Console.pl Admin::Package::Install /path/to/$Name-$Version.opm
 <chapter>
     <title>Tests</title>
     <para>
-        This module has been quality assured according to the current OTRS guidelines.
+        This module has been quality assured according to the current Znuny guidelines.
     </para>
     <section>
         <title>Test Cases</title>
