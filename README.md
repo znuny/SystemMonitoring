@@ -1,6 +1,6 @@
 ![Znuny logo](https://znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/SystemMonitoring/dev)
+![Build status](https://badge.proxy.znuny.com/SystemMonitoring/rel-6_5)
 
 SystemMonitoring
 ================
@@ -8,7 +8,7 @@ This package contains a postmaster filter which provides a primary email interfa
 
 **Prerequisites**
 
-- Znuny 6.4
+- Znuny 6.5
 
 **Installation**
 
