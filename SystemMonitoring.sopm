@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.1">
     <Name>SystemMonitoring</Name>
-    <Version>6.4.3</Version>
+    <Version>6.5.1</Version>
     <Framework>6.5.x</Framework>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
@@ -10,6 +10,7 @@
     <Description Lang="de">Einfache Email Schnittstelle zu System Monitoring Suites. Weitergehende Integration mit Nagios und Icinga2 (Acknowledge on lock and Checkscript).</Description>
     <Description Lang="es">Interfaz de correo básico para sistema de monitorización. También proporciona una integración más profunda de Nagios e Icinga2 (reconocer el bloqueo y script de control).</Description>
     <Description Lang="hu">Alapszintű levelezési felület a rendszerfigyelő alkalmazáscsomagokhoz. Mélyebb integrációt biztosít a Nagios és Icinga2 programokhoz (nyugtázás zároláskor és ellenőrző parancsfájl).</Description>
+    <ChangeLog Version="6.5.1" Date="2023-02-20 14:21:54 +0100">Initial release for Znuny 6.5.</ChangeLog>
     <ChangeLog Version="6.4.3" Date="2023-02-08 11:05:19 +0100">Allow to link ticket and CI without setting the incident state</ChangeLog>
     <ChangeLog Version="6.4.2" Date="2022-10-26 07:57:32 +0200">Added a configuration that sets a lock when a ticket is closed.</ChangeLog>
     <ChangeLog Version="6.4.1" Date="2022-08-01 14:51:55 +0200">Initial release for Znuny 6.4.</ChangeLog>
