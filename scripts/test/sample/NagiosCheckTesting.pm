@@ -26,7 +26,7 @@
 
     # Information used by Nagios
     # Name of check shown in Nagios Status Information
-    checkname => 'OTRS Checker',
+    checkname => 'Znuny Checker',
 
     # Text shown in Status Information if everything is OK
     OK_TXT => 'enjoy   tickets:',

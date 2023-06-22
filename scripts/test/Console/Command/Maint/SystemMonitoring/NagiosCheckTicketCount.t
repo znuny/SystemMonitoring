@@ -17,7 +17,9 @@ use vars (qw($Self));
 my $CommandObject
     = $Kernel::OM->Get('Kernel::System::Console::Command::Maint::SystemMonitoring::NagiosCheckTicketCount');
 
-my $ConfigFile = $Kernel::OM->Get('Kernel::Config')->Get('Home') . '/scripts/test/sample/NagiosCheckTesting.pm';
+my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+
+my $ConfigFile = $ConfigObject->Get('Home') . '/scripts/test/sample/NagiosCheckTesting.pm';
 
 my $ExitCode = $CommandObject->Execute( '--config-file', $ConfigFile, '--as-checker', );
 

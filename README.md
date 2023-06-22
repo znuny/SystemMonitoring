@@ -1,6 +1,6 @@
 ![Znuny logo](https://znuny.com/assets/images/logo_small.png)
 
-![Build status](https://badge.proxy.znuny.com/SystemMonitoring/rel-6_5)
+![Build status](https://badge.proxy.znuny.com/SystemMonitoring/rel-7_0)
 
 SystemMonitoring
 ================
@@ -8,11 +8,11 @@ This package contains a postmaster filter which provides a primary email interfa
 
 **Prerequisites**
 
-- Znuny 6.5
+- Znuny 7.0
 
 **Installation**
 
-Install the add-on via the package manager from the repository "Freebie Features". If you like to download the add-on find the version for your Znuny version at https://download.znuny.org/releases/packages/. This file can be installed by uploading it to the package manger or by using  bin/otrs.Console.pl.
+Install the add-on via the package manager from the repository "Freebie Features". If you like to download the add-on find the version for your Znuny version at https://download.znuny.org/releases/packages/. This file can be installed by uploading it to the package manger or by using bin/znuny.Console.pl.
 
 **Configuration**
 

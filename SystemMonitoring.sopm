@@ -2,7 +2,7 @@
 <otrs_package version="1.1">
     <Name>SystemMonitoring</Name>
     <Version>6.5.1</Version>
-    <Framework>6.5.x</Framework>
+    <Framework>7.0.x</Framework>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
@@ -95,8 +95,6 @@
         You are about to install the package SystemMonitoring.<br>
         <br>
         <br>
-        ((enjoy))<br>
-        <br>
 
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
@@ -107,8 +105,6 @@
         <br>
         Sie sind im Begriff das Paket SystemMonitoring zu installieren.<br>
         <br>
-        <br>
-        ((enjoy))<br>
         <br>
 
     ]]></IntroInstall>
@@ -121,8 +117,6 @@
         Ud. está a punto de instalar el paquete de Monitorización del Sistema.<br>
         <br>
         <br>
-        ((enjoy))<br>
-        <br>
 
     ]]></IntroInstall>
     <IntroInstall Type="pre" Title="Telepítési információk" Lang="hu"><![CDATA[
@@ -133,8 +127,6 @@
         <br>
         Ön a SystemMonitoring csomag telepítésére készül.<br>
         <br>
-        <br>
-        ((enjoy))<br>
         <br>
 
     ]]></IntroInstall>
@@ -147,8 +139,6 @@
         For configuration instructions please refer to the enclosed PDF documentation.
         <br>
         <br>
-        ((enjoy))<br>
-        <br>
 
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Installation Information" Lang="de"><![CDATA[
@@ -159,8 +149,6 @@
         <br>
         Eine Anleitung zur Konfiguration des SystemMonitoring Moduls findet sich in der Datei PDF.
         <br>
-        <br>
-        ((enjoy))<br>
         <br>
 
     ]]></IntroInstall>
@@ -173,8 +161,6 @@
         Instrucciones sobre cómo configurar el módulo de monitorización del sistema se proporcionan en el archivo PDF .
         <br>
         <br>
-        ((enjoy))<br>
-        <br>
 
     ]]></IntroInstall>
     <IntroInstall Type="post" Title="Telepítési információk" Lang="hu"><![CDATA[
@@ -185,8 +171,6 @@
         <br>
         A beállítási utasításokért nézze meg a mellékelt PDF-dokumentumot.
         <br>
-        <br>
-        ((enjoy))<br>
         <br>
 
     ]]></IntroInstall>
@@ -199,8 +183,6 @@
         You are about to upgrade the package SystemMonitoring.<br>
         <br>
         <br>
-        ((enjoy))<br>
-        <br>
 
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Upgrade Information" Lang="de"><![CDATA[
@@ -211,8 +193,6 @@
         <br>
         Sie sind im Begriff das Paket SystemMonitoring zu aktualisieren.<br>
         <br>
-        <br>
-        ((enjoy))<br>
         <br>
 
     ]]></IntroUpgrade>
@@ -225,8 +205,6 @@
         Ud. está a punto de actualizar el paquete de Monitorización del Sistema.<br>
         <br>
         <br>
-        ((enjoy))<br>
-        <br>
 
     ]]></IntroUpgrade>
     <IntroUpgrade Type="pre" Title="Frissítési információk" Lang="hu"><![CDATA[
@@ -237,8 +215,6 @@
         <br>
         Ön a SystemMonitoring csomag frissítésére készül.<br>
         <br>
-        <br>
-        ((enjoy))<br>
         <br>
 
     ]]></IntroUpgrade>

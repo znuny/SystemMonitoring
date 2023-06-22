@@ -11,18 +11,18 @@ package Kernel::System::Console::Command::Maint::SystemMonitoring::NagiosCheckTi
 
 use strict;
 use warnings;
+use utf8;
 
 use parent qw(Kernel::System::Console::BaseCommand);
 
 our @ObjectDependencies = (
-    'Kernel::System::Main',
     'Kernel::System::Ticket',
 );
 
 sub Configure {
     my ( $Self, %Param ) = @_;
 
-    $Self->Description('OTRS Nagios checker.');
+    $Self->Description('Znuny Nagios checker.');
     $Self->AddOption(
         Name        => 'config-file',
         Description => "Path to configuration file.",
@@ -72,8 +72,10 @@ sub Run {
     # read configuration
     my %Config = %{ $Self->{Config} || {} };
 
+    my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
+
     # search tickets
-    my $TicketCount = $Kernel::OM->Get('Kernel::System::Ticket')->TicketSearch(
+    my $TicketCount = $TicketObject->TicketSearch(
         %{ $Config{Search} },
         Limit  => 100_000,
         Result => 'COUNT',

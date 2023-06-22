@@ -6,7 +6,7 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 # For possible search options see:
-# http://otrs.github.io/doc/api/otrs/stable/Perl/Kernel/System/Ticket/TicketSearch.pm.html -> TicketSearch()
+# https://github.com/znuny/Znuny/blob/dev/Kernel/System/Ticket/TicketSearch.pm -> TicketSearch()
 # Examples see below
 # --
 
@@ -61,7 +61,7 @@
 
 # Information used by Nagios
 # Name of check shown in Nagios Status Information
-   checkname => 'OTRS Checker',
+   checkname => 'Znuny Checker',
 
 # Text shown in Status Information if everything is OK
    OK_TXT    => 'enjoy   tickets:',

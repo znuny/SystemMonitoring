@@ -12,6 +12,7 @@ package Kernel::System::Ticket::Event::Icinga2Acknowledge;
 use strict;
 use warnings;
 use Kernel::System::VariableCheck qw(:all);
+use utf8;
 
 our @ObjectDependencies = (
     'Kernel::Config',
