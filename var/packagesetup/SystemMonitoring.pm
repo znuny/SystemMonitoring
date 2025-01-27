@@ -54,10 +54,12 @@ sub new {
     bless( $Self, $Type );
 
     # Force a reload of ZZZAuto.pm and ZZZAAuto.pm to get the fresh configuration values.
+    MODULE:
     for my $Module ( sort keys %INC ) {
-        if ( $Module =~ m/ZZZAA?uto\.pm$/ ) {
-            delete $INC{$Module};
-        }
+        next MODULE if !$Module;
+        next MODULE if $Module !~ m/ZZZAA?uto\.pm$/;
+
+        delete $INC{$Module};
     }
 
     # always discard the config object before package code is executed,
@@ -128,13 +130,16 @@ run the code upgrade pre part
 sub CodeUpgradePre {
     my ( $Self, %Param ) = @_;
 
+    my $ConfigObject    = $Kernel::OM->Get('Kernel::Config');
+    my $SysConfigObject = $Kernel::OM->Get('Kernel::System::SysConfig');
+
     # check if config option exists
-    my $Config = $Kernel::OM->Get('Kernel::Config')->Get('PostMaster::PreFilterModule');
+    my $Config = $ConfigObject->Get('PostMaster::PreFilterModule');
 
     # update/rename config option
     if ( $Config && $Config->{'0001-SystemMonitoring'} ) {
 
-        my $Success = $Kernel::OM->Get('Kernel::System::SysConfig')->SettingsSet(
+        my $Success = $SysConfigObject->SettingsSet(
             UserID   => 1,
             Comments => 'Deployment from CodeUpgradePre in var/packagesetup/SystemMonitoring.pm',
             Settings => [
@@ -154,12 +159,14 @@ sub CodeUpgradePre {
 
 This function is only executed if the installed module version is smaller than 2.2.92.
 
-my $Result = $CodeObject->CodeUpgradeFromLowerThan_2_2_92();
+    my $Result = $CodeObject->CodeUpgradeFromLowerThan_2_2_92();
 
 =cut
 
 sub CodeUpgradeFromLowerThan_2_2_92 {    ## no critic
     my ( $Self, %Param ) = @_;
+
+    my $LogObject = $Kernel::OM->Get('Kernel::System::Log');
 
     # get the definition for all dynamic fields for SystemMonitoring
     my @DynamicFields = $Self->_GetDynamicFieldsDefinition();
@@ -177,7 +184,7 @@ sub CodeUpgradeFromLowerThan_2_2_92 {    ## no critic
             $DynamicFieldObject->DynamicFieldGet( Name => $DynamicFieldNew->{Name} );
 
         if ( !defined $DynamicFieldOld->{ID} ) {
-            $Kernel::OM->Get('Kernel::System::Log')->Log(
+            $LogObject->Log(
                 Priority => 'error',
                 Message  => "The old Field does not exist $DynamicFieldNew->{Name}, skipping.",
             );
@@ -227,12 +234,13 @@ creates all dynamic fields that are necessary for SystemMonitoring
 sub _CreateDynamicFields {
     my ( $Self, %Param ) = @_;
 
-    my $ValidID = $Kernel::OM->Get('Kernel::System::Valid')->ValidLookup(
+    my $LogObject          = $Kernel::OM->Get('Kernel::System::Log');
+    my $ValidObject        = $Kernel::OM->Get('Kernel::System::Valid');
+    my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
+
+    my $ValidID = $ValidObject->ValidLookup(
         Valid => 'valid',
     );
-
-    # get dynamic field object
-    my $DynamicFieldObject = $Kernel::OM->Get('Kernel::System::DynamicField');
 
     # get all current dynamic fields
     my $DynamicFieldList = $DynamicFieldObject->DynamicFieldListGet(
@@ -269,7 +277,7 @@ sub _CreateDynamicFields {
                     ( $OldDynamicField->{Label} eq $DynamicField->{Label} )
                     )
                 {
-                    $Kernel::OM->Get('Kernel::System::Log')->Log(
+                    $LogObject->Log(
                         Priority => 'info',
                         Message  => "Field already exists Label:$DynamicField->{Label}, skipping."
                     );
@@ -310,13 +318,11 @@ returns the definition for System Monitoring related dynamic fields
 sub _GetDynamicFieldsDefinition {
     my ( $Self, %Param ) = @_;
 
-    my @AllNewFields = ();    # the fields that are filled out
-
-    # get config object
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
+    my $MainObject   = $Kernel::OM->Get('Kernel::System::Main');
+    my $LogObject    = $Kernel::OM->Get('Kernel::System::Log');
 
-    # get dynamic field object
-    my $MainObject = $Kernel::OM->Get('Kernel::System::Main');
+    my @AllNewFields = ();    # the fields that are filled out
 
     # run all PreFilterModules (modify email params)
     for my $Key ('PostMaster::PreFilterModule') {
@@ -340,7 +346,7 @@ sub _GetDynamicFieldsDefinition {
                 );
 
                 if ( !$FilterObject ) {
-                    $Kernel::OM->Get('Kernel::System::Log')->Log(
+                    $LogObject->Log(
                         Priority => 'error',
                         Message  => "Can not create $Jobs{$Job}->{Module} object!",
                     );
@@ -352,7 +358,7 @@ sub _GetDynamicFieldsDefinition {
                     NewFields => \@NewFields
                 );
                 if ( !$Run ) {
-                    $Kernel::OM->Get('Kernel::System::Log')->Log(
+                    $LogObject->Log(
                         Priority => 'error',
                         Message =>
                             "Execute GetDynamicFieldsDefinition() of $Key $Jobs{$Job}->{Module} not successful!",
