@@ -39,8 +39,8 @@ sub Data {
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = 'Modulo evento Ticket per inviare un riconoscimento a Icinga2.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = 'Modulo evento Ticket per inviare un riconoscimento a Nagios.';
 
-
-    push @{ $Self->{JavaScriptStrings} // [] }, (
+    $Self->{JavaScriptStrings} //= [];
+    push @{$Self->{JavaScriptStrings}}, (
     );
 
 }

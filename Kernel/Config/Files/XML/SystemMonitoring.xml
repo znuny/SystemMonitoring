@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otrs_config version="2.0" init="Application">
-    <Setting Name="PostMaster::PreFilterModule###1-SystemMonitoring" Required="0" Valid="1">
+    <Setting Name="PostMaster::PreFilterModule###000-SystemMonitoring" Required="0" Valid="1">
+        <Description Translatable="1">Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.</Description>
+        <Navigation>Core::Email::PostMaster</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="Module">Kernel::System::PostMaster::Filter::SystemMonitoring</Item>
+                <Item Key="FromAddressRegExp">nagios@example.com</Item>
+                <Item Key="StateRegExp">\s*State:\s+(\S+)</Item>
+                <Item Key="HostRegExp">\s*Host:\s+(.*)\s*</Item>
+                <Item Key="ServiceRegExp">\s*Service:\s+(.*)\s*</Item>
+                <Item Key="NewTicketRegExp">CRITICAL|DOWN</Item>
+                <Item Key="CloseTicketRegExp">OK|UP</Item>
+                <Item Key="CloseActionState">closed successful</Item>
+                <Item Key="ClosePendingTime">172800</Item>
+                <Item Key="DefaultService">Host</Item>
+                <Item Key="FreeTextHost">1</Item>
+                <Item Key="FreeTextService">2</Item>
+                <Item Key="SenderType">system</Item>
+                <Item Key="ArticleType">note-report</Item>
+                <Item Key="FreeTextState">1</Item>
+            </Hash>
+        </Value>
+    </Setting>
+    <Setting Name="PostMaster::PostFilterModule###001-SystemMonitoring" Required="0" Valid="0">
         <Description Translatable="1">Basic mail interface to System Monitoring Suites. Use this block if the filter should run AFTER PostMasterFilter.</Description>
         <Navigation>Core::Email::PostMaster</Navigation>
         <Value>
@@ -23,26 +46,19 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="PostMaster::PreFilterModule###00-SystemMonitoring" Required="0" Valid="0">
-        <Description Translatable="1">Basic mail interface to System Monitoring Suites. Use this block if the filter should run BEFORE PostMasterFilter.</Description>
+    <Setting Name="PostMaster::PostFilterModule###001-SystemMonitoring::LinkTicketWithCI" Required="0" Valid="0">
+        <Description Translatable="1">Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives. The SystemMonitoring::LinkTicketWithCI setting must be activated.</Description>
         <Navigation>Core::Email::PostMaster</Navigation>
         <Value>
             <Hash>
-                <Item Key="Module">Kernel::System::PostMaster::Filter::SystemMonitoring</Item>
+                <Item Key="Module">Kernel::System::PostMaster::Filter::SystemMonitoring::LinkTicketWithCI</Item>
+                <Item Key="FreeTextHost">1</Item>
+                <Item Key="FreeTextService">2</Item>
+                <Item Key="FreeTextState">1</Item>
                 <Item Key="FromAddressRegExp">nagios@example.com</Item>
                 <Item Key="StateRegExp">\s*State:\s+(\S+)</Item>
                 <Item Key="HostRegExp">\s*Host:\s+(.*)\s*</Item>
                 <Item Key="ServiceRegExp">\s*Service:\s+(.*)\s*</Item>
-                <Item Key="NewTicketRegExp">CRITICAL|DOWN</Item>
-                <Item Key="CloseTicketRegExp">OK|UP</Item>
-                <Item Key="CloseActionState">closed successful</Item>
-                <Item Key="ClosePendingTime">172800</Item>
-                <Item Key="DefaultService">Host</Item>
-                <Item Key="FreeTextHost">1</Item>
-                <Item Key="FreeTextService">2</Item>
-                <Item Key="SenderType">system</Item>
-                <Item Key="ArticleType">note-report</Item>
-                <Item Key="FreeTextState">1</Item>
             </Hash>
         </Value>
     </Setting>
