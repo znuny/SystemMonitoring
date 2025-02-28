@@ -92,3 +92,11 @@ msgstr "管道"
 msgid "Defines if closed tickets will be unlocked."
 msgstr ""
 
+#. SysConfig
+msgid "Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives. The SystemMonitoring::LinkTicketWithCI setting must be activated."
+msgstr ""
+
+#. SysConfig
+msgid "Nagios acknowledgement enabled?"
+msgstr ""
+

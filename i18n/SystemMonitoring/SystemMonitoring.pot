@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: SystemMonitoring\n"
-"POT-Creation-Date: 2022-11-25 09:52+0000\n"
+"POT-Creation-Date: 2025-02-28 03:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,14 @@ msgstr ""
 
 #. SysConfig
 msgid "Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives."
+msgstr ""
+
+#. SysConfig
+msgid "Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives. The SystemMonitoring::LinkTicketWithCI setting must be activated."
+msgstr ""
+
+#. SysConfig
+msgid "Nagios acknowledgement enabled?"
 msgstr ""
 
 #. SysConfig

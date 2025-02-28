@@ -29,6 +29,9 @@ sub Data {
     $Self->{Translation}->{'Icinga2 acknowledgement sticky.'} = 'Icinga2 nyugtázás ragasztás.';
     $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives.'} =
         'Egy már megnyitott incidensjegy összekapcsolása az érintett CI-vel. Ez csak akkor lehetséges, amikor egy következő rendszerfigyelő e-mail érkezik.';
+    $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives. The SystemMonitoring::LinkTicketWithCI setting must be activated.'} =
+        '';
+    $Self->{Translation}->{'Nagios acknowledgement enabled?'} = '';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'A dinamikus mező neve a gépnél.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'A dinamikus mező neve a szolgáltatásnál.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
@@ -39,8 +42,8 @@ sub Data {
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = 'Jegyesemény modul egy nyugta küldéséhez a Icinga2 számára.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = 'Jegyesemény modul egy nyugta küldéséhez a Nagios számára.';
 
-    $Self->{JavaScriptStrings} //= [];
-    push @{$Self->{JavaScriptStrings}}, (
+
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     );
 
 }
