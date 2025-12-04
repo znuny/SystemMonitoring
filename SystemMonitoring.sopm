@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.1">
     <Name>SystemMonitoring</Name>
-    <Version>7.2.1</Version>
+    <Version>7.3.1</Version>
     <Framework>7.3.x</Framework>
     <Vendor>Znuny</Vendor>
     <URL>https://www.znuny.org/</URL>
@@ -10,6 +10,7 @@
     <Description Lang="de">Einfache Email Schnittstelle zu System Monitoring Suites. Weitergehende Integration mit Nagios und Icinga2 (Acknowledge on lock and Checkscript).</Description>
     <Description Lang="es">Interfaz de correo básico para sistema de monitorización. También proporciona una integración más profunda de Nagios e Icinga2 (reconocer el bloqueo y script de control).</Description>
     <Description Lang="hu">Alapszintű levelezési felület a rendszerfigyelő alkalmazáscsomagokhoz. Mélyebb integrációt biztosít a Nagios és Icinga2 programokhoz (nyugtázás zároláskor és ellenőrző parancsfájl).</Description>
+    <ChangeLog Version="7.3.1" Date="2025-12-04 17:16:18 +0100">Initial release for Znuny 7.3.</ChangeLog>
     <ChangeLog Version="7.2.1" Date="2025-09-01 08:05:42 +0200">Initial release for Znuny 7.2.</ChangeLog>
     <ChangeLog Version="7.1.2" Date="2025-01-27 23:02:29 +0100">The link to the related CI should be created with the first email. Changed XML PostMaster configuration from Pre to Post Filter.</ChangeLog>
     <ChangeLog Version="7.1.1" Date="2024-10-07 09:17:15 +0200">Initial release for Znuny 7.1.</ChangeLog>
