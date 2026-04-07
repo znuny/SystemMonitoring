@@ -30,7 +30,7 @@ sub Data {
     $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives.'} =
         'Połącz już otwarte zgłoszenie zdarzenia z dotyczącym go CI. Jest to możliwe wtedy, gdy nadejdzie kolejny email z systemu monitorującego.';
     $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives. The SystemMonitoring::LinkTicketWithCI setting must be activated.'} =
-        '';
+        'Określa domyślną treść notatki na ekranie decyzji w interfejsie agenta. Jest to możliwe tylko wtedy, gdy przyjdzie kolejny e-mail z monitorowaniem systemu. Ustawienie SystemMonitoring::LinkTicketWithCI musi być włączone.';
     $Self->{Translation}->{'Nagios acknowledgement enabled?'} = '';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Nazwa pola dynamicznego dla hosta.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Nazwa pola dynamicznego dla Usługi.';
