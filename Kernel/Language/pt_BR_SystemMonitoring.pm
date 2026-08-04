@@ -29,6 +29,9 @@ sub Data {
     $Self->{Translation}->{'Icinga2 acknowledgement sticky.'} = '';
     $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives.'} =
         'Associar um chamado de incidente já criado com o IC afetado. Isto só é possível quando um email de monitoramento subsequente é recebido.';
+    $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives. The SystemMonitoring::LinkTicketWithCI setting must be activated.'} =
+        '';
+    $Self->{Translation}->{'Nagios acknowledgement enabled?'} = '';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Campo Dinâmico para armazenar o Host';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Campo Dinâmico para armazenar o Serviço';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
@@ -39,8 +42,8 @@ sub Data {
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = '';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = 'Eventos do Chamado para enviar o acknowledge para o Nagios.';
 
-    $Self->{JavaScriptStrings} //= [];
-    push @{$Self->{JavaScriptStrings}}, (
+
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     );
 
 }

@@ -92,3 +92,11 @@ msgstr "Pipe"
 msgid "Defines if closed tickets will be unlocked."
 msgstr "Bestimmt, ob geschlossene Tickets entsperrt werden."
 
+#. SysConfig
+msgid "Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives. The SystemMonitoring::LinkTicketWithCI setting must be activated."
+msgstr ""
+
+#. SysConfig
+msgid "Nagios acknowledgement enabled?"
+msgstr "Nagios-Bestätigung aktiviert?"
+

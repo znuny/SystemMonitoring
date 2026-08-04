@@ -29,6 +29,9 @@ sub Data {
     $Self->{Translation}->{'Icinga2 acknowledgement sticky.'} = 'Icinga2 markiranje potvrde.';
     $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives.'} =
         'Poveži već otvoreni tiket incidenta sa pogođenom konfiguracionom stavkom. Ovo je jedino moguće kada stigne sledeći imejl od sistemskog nadzora.';
+    $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives. The SystemMonitoring::LinkTicketWithCI setting must be activated.'} =
+        '';
+    $Self->{Translation}->{'Nagios acknowledgement enabled?'} = '';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'Naziv dinamičkog polja za server.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'Naziv dinamičkog polja za servis.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
@@ -39,8 +42,8 @@ sub Data {
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Icinga2.'} = 'Modul događaja tiketa za slanje potvrde za Icinga2.';
     $Self->{Translation}->{'Ticket event module to send an acknowledge to Nagios.'} = 'Modul događaja tiketa za slanje potvrde za Nagios.';
 
-    $Self->{JavaScriptStrings} //= [];
-    push @{$Self->{JavaScriptStrings}}, (
+
+    push @{ $Self->{JavaScriptStrings} //= [] }, (
     );
 
 }
