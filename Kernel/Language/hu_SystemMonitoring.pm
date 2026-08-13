@@ -30,8 +30,8 @@ sub Data {
     $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives.'} =
         'Egy már megnyitott incidensjegy összekapcsolása az érintett konfigurációelemmel. Ez csak akkor lehetséges, amikor egy következő rendszerfigyelő e-mail érkezik.';
     $Self->{Translation}->{'Link an already opened incident ticket with the affected CI. This is only possible when a subsequent system monitoring email arrives. The SystemMonitoring::LinkTicketWithCI setting must be activated.'} =
-        '';
-    $Self->{Translation}->{'Nagios acknowledgement enabled?'} = '';
+        'Egy már megnyitott incidensjegy összekapcsolása az érintett konfigurációelemmel. Ez csak akkor lehetséges, amikor egy következő rendszerfigyelő e-mail érkezik. A „SystemMonitoring::LinkTicketWithCI” beállításnak aktiválva kell lennie.';
+    $Self->{Translation}->{'Nagios acknowledgement enabled?'} = 'Nagios nyugtázás engedélyezve?';
     $Self->{Translation}->{'Name of the Dynamic Field for Host.'} = 'A dinamikus mező neve a gépnél.';
     $Self->{Translation}->{'Name of the Dynamic Field for Service.'} = 'A dinamikus mező neve a szolgáltatásnál.';
     $Self->{Translation}->{'Set the incident state of a CI automatically when a system monitoring email arrives.'} =
