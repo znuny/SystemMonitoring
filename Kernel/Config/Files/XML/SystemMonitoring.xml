@@ -118,7 +118,7 @@
         <Description Translatable="1">The HTTP acknowledge password.</Description>
         <Navigation>Core::SystemMonitoring::Nagios</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">some_pass</Item>
+            <Item ValueType="Password">some_pass</Item>
         </Value>
     </Setting>
     <Setting Name="Icinga2::Acknowledge::Enabled" Required="1" Valid="1">
@@ -170,7 +170,7 @@
         <Description Translatable="1">The HTTP acknowledge password.</Description>
         <Navigation>Core::SystemMonitoring::Icinga2</Navigation>
         <Value>
-            <Item ValueType="String" ValueRegex="">some_pass</Item>
+            <Item ValueType="Password">some_pass</Item>
         </Value>
     </Setting>
     <Setting Name="Icinga2::Acknowledge::Author" Required="0" Valid="1">
