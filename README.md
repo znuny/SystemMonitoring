@@ -15,7 +15,7 @@ This package contains a postmaster filter which provides a primary email interfa
 
 **Prerequisites**
 
-- Znuny 7.3
+- Znuny 7.5
 
 **Installation**
 
